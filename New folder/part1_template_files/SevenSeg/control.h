@@ -1,0 +1,26 @@
+///////////////////////////////////////////////////////////////////////////////
+/// CONTROL.H
+///
+/// Control module. This passes information to the LED driver (and in theory
+/// could be to anywhere else) via the message queue
+///
+///////////////////////////////////////////////////////////////////////////////
+
+#ifndef _CONTROL_H_
+#define _CONTROL_H_
+
+
+///////////////////////////////////////////////////////////////////////////////
+/// CONTROLInitialize
+///
+/// This is called once at system startup. It initializes the control
+/// module (by registering a task to run repetitively) and then exits. This
+/// function needs to be seen outside the module, so it is prototyped in the
+/// header file.
+///
+///////////////////////////////////////////////////////////////////////////////
+
+void CONTROLInitialize(void);
+
+
+#endif
